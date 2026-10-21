@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock in the yard — Brimotors Limited, Kiambu Road</title>
+<meta name="description" content="Browse the current Brimotors Limited stock: SUVs, pickups, sedans and hatchbacks in Nairobi, with verified mileage, engine size and dealer asking prices.">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="shell topbar__inner">
+    <div class="topbar__group topbar__group--left">
+      <span><span class="dot"></span>Kiambu Road, Nairobi — 50 m from the Northern Bypass</span>
+    </div>
+    <div class="topbar__group">
+      <span data-open-now>Open today 8:00 am – 5:30 pm</span>
+      <a href="tel:+254722114035">+254 722 114 035</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Brimotors Limited" width="167" height="31">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="inventory.html">Stock</a>
+      <a href="services.html">Imports</a>
+      <a href="services.html#trade-in">Sell or trade</a>
+      <a href="index.html#finance">Finance</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Visit</a>
+    </nav>
+    <div class="header-actions">
+      <p class="header-phone"><span>Sales &amp; viewings</span><a href="tel:+254722114035">0722 114 035</a></p>
+      <a class="btn btn--sm" href="contact.html">Book a viewing</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="shell mobile-nav__inner">
+    <a href="inventory.html">Stock <span>17 vehicles</span></a>
+    <a href="services.html">Imports <span>Japan · UK · TH · SA</span></a>
+    <a href="services.html#trade-in">Sell or trade <span>Cash or trade-in</span></a>
+    <a href="index.html#finance">Finance <span>Bank options</span></a>
+    <a href="about.html">About <span>Kiambu Road</span></a>
+    <a href="contact.html">Visit <span>Directions</span></a>
+    <a class="btn" href="tel:+254722114035">Call 0722 114 035</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="shell">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Stock</span>
+      </nav>
+      <h1>Everything on the yard, right now.</h1>
+      <p>Seventeen vehicles on Kiambu Road, from a KES 390,000 runabout to a KES 5.5M Prado. Filter by what matters, then come and drive it.</p>
+    </div>
+  </section>
+
+  <div class="shell">
+    <div class="listing">
+      <aside class="filters" aria-label="Filter stock">
+        <div class="filters__head">
+          <h2>Filter</h2>
+          <button type="button" data-reset>Reset</button>
+        </div>
+        <div class="filters__body">
+          <div class="filter-group">
+            <h3>Make</h3>
+            <div class="chips" data-makes></div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Body</h3>
+            <div class="chips">
+              <button class="chip" type="button" data-body="all" aria-pressed="true">All</button>
+              <button class="chip" type="button" data-body="SUV" aria-pressed="false">SUV</button>
+              <button class="chip" type="button" data-body="Pickup" aria-pressed="false">Pickup</button>
+              <button class="chip" type="button" data-body="Hatchback" aria-pressed="false">Hatchback</button>
+              <button class="chip" type="button" data-body="Sedan" aria-pressed="false">Sedan</button>
+              <button class="chip" type="button" data-body="Van" aria-pressed="false">Van</button>
+              <button class="chip" type="button" data-body="MPV" aria-pressed="false">MPV</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Budget</h3>
+            <div class="range-row">
+              <span class="muted" style="font-size:12px">Up to</span>
+              <output data-max-out>KES 6,000,000</output>
+            </div>
+            <input type="range" min="390000" max="6000000" step="10000" value="6000000" data-max aria-label="Maximum price">
+          </div>
+        </div>
+      </aside>
+
+      <section aria-label="Vehicles">
+        <div class="listing__toolbar">
+          <p class="listing__count" data-count>17 of 17 vehicles</p>
+          <div class="listing__tools">
+            <div class="search-field">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg>
+              <input type="search" placeholder="Search model, fuel…" aria-label="Search stock" data-search>
+            </div>
+            <div class="select">
+              <select data-sort aria-label="Sort vehicles">
+                <option value="newest">Newest first</option>
+                <option value="priceAsc">Price: low to high</option>
+                <option value="priceDesc">Price: high to low</option>
+                <option value="mileage">Lowest mileage</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-grid" data-results>
+          <!-- rendered by site.js -->
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="cta-band">
+    <div class="shell cta-band__inner">
+      <div>
+        <h2>Not seeing it? We source to order.</h2>
+        <p>Send us the model, year range and budget. We import from Japan, the UK, Thailand and South Africa.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--light" href="contact.html">Send a sourcing brief</a>
+        <a class="btn btn--outline-light" href="https://wa.me/254722114035?text=Hello%20Brimotors%2C%20I%27m%20looking%20for%20a%20specific%20vehicle.">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-wordmark-white.png" alt="Brimotors Limited" width="190" height="44">
+        <p>Motor vehicle dealership on Kiambu Road, Nairobi. Direct imports and clean local cars since the yard opened.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/brimotorskenya/" aria-label="Brimotors on Facebook" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/brimotors.limited/" aria-label="Brimotors on Instagram" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="1.1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/254722114035" aria-label="Brimotors on WhatsApp" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 12a8 8 0 01-11.9 7L4 20l1-4.1A8 8 0 1120 12z" stroke="currentColor" stroke-width="1.6"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5.6 0 1.2-.5 1.2-1.1l-1.7-1-1 .8c-1-.4-2.3-1.7-2.7-2.7l.8-1-1-1.7c-.6 0-1.1.6-1.1 1.2z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Stock</h3>
+        <ul>
+          <li><a href="inventory.html?body=SUV">SUVs &amp; 4x4s</a></li>
+          <li><a href="inventory.html?body=Pickup">Pickups</a></li>
+          <li><a href="inventory.html?body=Hatchback">Hatchbacks</a></li>
+          <li><a href="inventory.html?body=Sedan">Sedans</a></li>
+          <li><a href="inventory.html?sort=priceAsc">Under KES 1M</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Brimotors</h3>
+        <ul>
+          <li><a href="about.html">About the yard</a></li>
+          <li><a href="services.html">Imports &amp; sourcing</a></li>
+          <li><a href="services.html#trade-in">Sell or trade</a></li>
+          <li><a href="index.html#finance">Financing</a></li>
+          <li><a href="contact.html">Visit &amp; contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--hours">
+        <h3>Find us</h3>
+        <p class="mono" style="margin-bottom:12px">Kiambu Road, Nairobi</p>
+        <p class="mono" style="margin-bottom:16px"><a href="tel:+254722114035">+254 722 114 035</a></p>
+        <div class="hours-line"><span>Mon – Fri</span><span>8:00 – 17:30</span></div>
+        <div class="hours-line"><span>Saturday</span><span>8:00 – 17:00</span></div>
+        <div class="hours-line"><span>Sunday</span><span>14:00 – 17:30</span></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Brimotors Limited. All rights reserved.</span>
+      <span>Design concept · Developed by <strong style="color:rgba(255,255,255,.75);font-weight:500">Ssozi</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
